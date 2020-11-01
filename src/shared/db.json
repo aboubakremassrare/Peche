@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Casablanca",
+      "namearab":"الدار البيضاء",
+      "abrv": "cb",
+      "urlNameTides":"Casablanca"
+    },
+    {
+      "id": 2,
+      "name": "Rabat",
+      "namearab":"الرباط",
+      "abrv": "rb",
+      "urlNameTides":"Rabat"
+    },
+    {
+      "id": 3,
+      "name": "Fes",
+      "namearab":"فاس",
+      "abrv": "fs",
+      "urlNameTides":""
+    },
+    {
+      "id": 4,
+      "name": "Meknes",
+      "namearab":"مكناس",
+      "abrv": "mk",
+      "urlNameTides":""
+    },
+    {
+      "id": 5,
+      "name": "Tanger",
+      "namearab":"طنجة",
+      "abrv": "tg",
+      "urlNameTides":"Tanger"
+    },
+    {
+      "id": 6,
+      "name": "Agadir",
+      "namearab":"أكادير",
+      "abrv": "ag",
+      "urlNameTides":"Agadir"
+    },
+    {
+      "id": 7,
+      "name": "Dakhla",
+      "namearab":"الداخلة",
+      "abrv": "dk",
+      "urlNameTides":"Dakhla--Oued-Ed--Dahab"
+    },
+    {
+      "id": 8,
+      "name": "Tétouan",
+      "namearab":" تطوان",
+      "abrv": "sd",
+      "urlNameTides":""
+    },
+    {
+      "id": 9,
+      "name": "Marrakesh",
+      "namearab":"مراكش",
+      "abrv": "mr",
+      "urlNameTides":""
+    },
+    {
+      "id": 10,
+      "name": "Nador",
+      "namearab":"الناظور",
+      "abrv": "nd",
+      "urlNameTides":"Nador"
+    }
+  ]
