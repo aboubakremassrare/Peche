@@ -1,16 +1,14 @@
 import React from 'react';
 import {Image, View, Text,StyleSheet,Dimensions,ImageBackground } from 'react-native';
 
-
 const { width } = Dimensions.get('window')
 
 const Meteocarte = ({item})=>{
-
- const api_urlIcon='http://openweathermap.org/img/w/'
+    //Api Base Url
+    const api_urlIcon='http://openweathermap.org/img/w/'
 
     return(
         <View style={styles.ViewCart}>
-
            <View style={{ width: width*0.9, padding: 16}} >
                     <ImageBackground
                         source={require("../../assets/meteoblue.jpg")}
@@ -33,7 +31,6 @@ const Meteocarte = ({item})=>{
                             <Text style={styles.TextStyle} >الوصف : {item.weather[0].description}</Text> 
                         </View>
                     </ImageBackground>
-
             </View>
         </View> 
 
@@ -42,9 +39,8 @@ const Meteocarte = ({item})=>{
 
 export default Meteocarte;
 
-
+//Styles
 const styles = StyleSheet.create({
- 
     ViewCart:{
         flex: 1,
         flexDirection: 'column',
@@ -60,14 +56,12 @@ const styles = StyleSheet.create({
         alignSelf:'flex-end',
         marginVertical:10,
         marginHorizontal:25
-      
     },
     TextStyleTemp:{
         top:5,
         fontSize:32,
         color:'yellow',
         fontWeight: 'bold'
-        
     },
     TextStyle:{
          fontSize:18,
@@ -79,7 +73,5 @@ const styles = StyleSheet.create({
         color:'yellow',
         fontSize:20,
         textAlign:'center',
-   
     }
-
 });

@@ -15,24 +15,10 @@ export default function Home({ navigation }) {
   const color='#ffdd00'
 
   return (
-    // <View style={globalStyles.container}>
-    //   <FlatList data={reviews} renderItem={({ item }) => (
-    //     <TouchableOpacity onPress={() => navigation.navigate('ReviewDetails', item)}>
-    //       <Text style={globalStyles.titleText}>{ item.title }</Text>
-    //     </TouchableOpacity>
-    //   )} />
-    // </View>
- 
-
-
         <View style={styles.container} >
-
               <View style={styles.titleContent}  >
-
                     <Text style={styles.titleContentTitle}>مرحبا بكم</Text>
-
               </View>
-
               <View style={styles.menuContent} >
                     <View style={styles.menuContentButton}>
                             <View style={styles.menuContentButtonLabel} >
@@ -45,7 +31,6 @@ export default function Home({ navigation }) {
                               <Text style={styles.menuContentButtonText} >المدوالجزر</Text>
                             </TouchableOpacity>
                             </View>
-
                             <View style={styles.menuContentButtonLabel} >
                               <Entypo
                                   name="moon"
@@ -54,7 +39,6 @@ export default function Home({ navigation }) {
                               />
                               <Text style={styles.menuContentButtonText} > دورةالقمر</Text>
                             </View>
-
                             <View style={styles.menuContentButtonLabel}  >
                             <TouchableOpacity onPress={() => navigation.navigate('About')}>
                               <MaterialCommunityIcons
@@ -66,7 +50,6 @@ export default function Home({ navigation }) {
                             </TouchableOpacity>
                             </View>
                     </View>
-
                     <View style={styles.menuContentButton}>
                             <View style={styles.menuContentButtonLabel} >
                               <Feather
@@ -96,75 +79,64 @@ export default function Home({ navigation }) {
                               />
                               <Text style={styles.menuContentButtonText} > بيع وشري</Text>
                             </View>
-                      
                     </View>
-           
               </View>
               <View style={styles.avatarContent}>
-
                     <Image source={require("../../assets/pecheur.jpg")} style={styles.avatarContentImage} />
-                  
               </View>
-
               <View style={{ flex: 0.05, backgroundColor: '#7DD0E5' }} >
-
               </View>
-
         </View>      
-         
-
-
   );
 }
 
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  titleContent: {
-    flex: 0.2,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  titleContentTitle:{
-    fontSize:45,
-    color:'#55bdef',
-    fontWeight: 'bold'
-  },
-  menuContent:{
-    flex: 0.4,
-    backgroundColor: 'white'
+      container: {
+        flex: 1,
+      },
+      titleContent: {
+        flex: 0.2,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      titleContentTitle:{
+        fontSize:45,
+        color:'#55bdef',
+        fontWeight: 'bold'
+      },
+      menuContent:{
+        flex: 0.4,
+        backgroundColor: 'white'
 
-  },
-  menuContentButton:{
-    flex: 0.5,
-    flexDirection: 'row',
-    justifyContent:'space-around',
-    alignItems:'center' 
-  },
-  menuContentButtonLabel:{
-    width: 100,
-    height: 100,
-    alignItems:'center'
+      },
+      menuContentButton:{
+        flex: 0.5,
+        flexDirection: 'row',
+        justifyContent:'space-around',
+        alignItems:'center' 
+      },
+      menuContentButtonLabel:{
+        width: 100,
+        height: 100,
+        alignItems:'center'
 
-  },
-  menuContentButtonText:{
-    color:'#55bdef',
-    fontSize:20,
-    fontWeight: 'bold'
+      },
+      menuContentButtonText:{
+        color:'#55bdef',
+        fontSize:20,
+        fontWeight: 'bold'
 
-  },
-  avatarContent:{
-    flex: 0.35,
-    backgroundColor: 'white' ,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  avatarContentImage:{
-      width: 80,
-      height: 180,
-  }
+      },
+      avatarContent:{
+        flex: 0.35,
+        backgroundColor: 'white' ,
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      avatarContentImage:{
+          width: 80,
+          height: 180,
+      }
 
 });

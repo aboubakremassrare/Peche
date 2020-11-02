@@ -110,7 +110,6 @@ export default class Boussole extends Component {
             </Text>
           </Col>
         </Row>
-
         <Row style={{alignItems: 'center'}} size={.1}>
           <Col style={{alignItems: 'center'}}>
             <View style={{position: 'absolute', width: width, alignItems: 'center', top: 0}}>
@@ -121,7 +120,6 @@ export default class Boussole extends Component {
             </View>
           </Col>
         </Row>
-
         <Row style={{alignItems: 'center'}} size={2}>
           <Text style={{
             color: 'darkorchid',
@@ -132,9 +130,7 @@ export default class Boussole extends Component {
           }}>
             {this._degree(this.state.magnetometer)}°
           </Text>
-
           <Col style={{alignItems: 'center'}}>
-
             <Image source={require("../../assets/compass_bg.png")} style={{
               height: width - 80,
               justifyContent: 'center',
@@ -142,10 +138,8 @@ export default class Boussole extends Component {
               resizeMode: 'contain',
               transform: [{rotate: 360 - this.state.magnetometer + 'deg'}]
             }}/>
-
           </Col>
         </Row>
-
         <Row style={{alignItems: 'center'}} size={1}>
           <Col style={{alignItems: 'center'}}>
             <Text style={{color: '#fff'}}></Text>

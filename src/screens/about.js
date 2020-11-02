@@ -9,17 +9,12 @@ export default class App extends React.Component {
   }
 
   render() {
-
     return (
       <View style={{flex:1}}>
-
         <FilterVille titleNavigation="Meteoville" navigation={this.props.navigation} />
-       
       </View>
     );
   }
 }
  
-const styles = StyleSheet.create({
- 
-});
+const styles = StyleSheet.create({});

@@ -2,12 +2,8 @@ import { createStackNavigator } from 'react-navigation-stack';
 import React from 'react';
 import Header from '../shared/header';
 import HeaderItem from '../shared/headerItem';
-
-
 import About from '../screens/about';
 import Meteoville from '../screens/meteoville';
-import { Feather } from "@expo/vector-icons";
-
 
 const screens = {
   About: {

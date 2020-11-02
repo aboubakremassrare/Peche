@@ -1,7 +1,9 @@
 import createDataContext from './createDataContext';
 import axios from 'axios';
 
+//Api Base Url
 const api_urlMeteo = 'http://api.openweathermap.org/data/2.5/forecast?q=';
+//Api Key
 const api_key='1ae0e05d29e5676b5e6ae70a74f6fef2';
 
 const blogReducer= (state,action) => {
@@ -10,7 +12,6 @@ const blogReducer= (state,action) => {
             return action.payload;    
         default:
             return state;
-
     }
 };
 
@@ -23,12 +24,8 @@ const getblogPost = dispatch =>{
             .catch((error)=>{
                 console.log(error);
             })
-    
         }  
-  
 };
-
-
 
 export const {Context,Provider} = createDataContext(
     blogReducer,
